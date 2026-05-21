@@ -34,12 +34,9 @@ async function main() {
     { name: 'Plant Pot Set', description: 'Set of 3 ceramic plant pots with drainage holes.', price: 39.99, image: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500', category: 'Home', stock: 12 }
   ]
 
-  for (const product of products) {
-    await prisma.product.upsert({
-      where: { id: product.name },
-      update: {},
-      create: { ...product, id: undefined }
-    })
+  const existing = await prisma.product.findFirst()
+  if (!existing) {
+    await prisma.product.createMany({ data: products })
   }
 
   console.log('Database seeded successfully!')
