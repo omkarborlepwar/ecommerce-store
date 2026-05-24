@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-white text-lg font-bold mb-4">ShopWave</h3>
-            <p className="text-sm">Your one-stop shop for quality products at great prices. Fast shipping and excellent customer service.</p>
+            <p className="text-sm">India ka apna store — quality products at best prices. Fast shipping across India and excellent customer service.</p>
           </div>
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
@@ -29,9 +29,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li>support@shopwave.com</li>
-              <li>1-800-SHOPWAVE</li>
-              <li>123 Commerce St, Suite 100</li>
+              <li>care@shopwave.in</li>
+              <li>1800-123-SHOP</li>
+              <li>B-42, Sector 62, Noida,</li>
+              <li>Uttar Pradesh 201309</li>
             </ul>
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function ProductCard({ product }) {
         </Link>
         <p className="text-sm text-gray-500 mt-1 line-clamp-2">{product.description}</p>
         <div className="flex items-center justify-between mt-3">
-          <span className="text-lg font-bold text-gray-900">${product.price.toFixed(2)}</span>
+          <span className="text-lg font-bold text-gray-900">₹{Number(product.price).toLocaleString('en-IN')}</span>
           <button onClick={() => addItem(product)} className="bg-primary-600 text-white px-3 py-1.5 rounded-lg text-sm hover:bg-primary-700 transition-colors" disabled={product.stock < 1}>
             {product.stock > 0 ? 'Add to Cart' : 'Out of Stock'}
           </button>

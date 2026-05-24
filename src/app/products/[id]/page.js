@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
         <div>
           <span className="text-sm text-primary-600 font-medium uppercase tracking-wide">{product.category}</span>
           <h1 className="text-3xl font-bold text-gray-900 mt-1">{product.name}</h1>
-          <p className="text-3xl font-bold text-primary-600 mt-4">${product.price.toFixed(2)}</p>
+          <p className="text-3xl font-bold text-primary-600 mt-4">₹{Number(product.price).toLocaleString('en-IN')}</p>
 
           <div className="mt-2">
             {product.stock > 0 ? (
@@ -77,7 +77,7 @@ export default function ProductDetailPage() {
           )}
 
           <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600">✔ Free shipping on orders over $50</p>
+            <p className="text-sm text-gray-600">✔ Free shipping on orders over ₹500</p>
             <p className="text-sm text-gray-600">✔ 30-day easy returns</p>
             <p className="text-sm text-gray-600">✔ Secure checkout</p>
           </div>

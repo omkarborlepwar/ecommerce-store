@@ -19,8 +19,8 @@ export default function HomePage() {
     <div>
       <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
         <div className="max-w-7xl mx-auto px-4 py-20 text-center">
-          <h1 className="text-5xl font-bold mb-4">Discover Your Style</h1>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">Shop the latest trends with confidence. Quality products, fast delivery, and unbeatable prices.</p>
+          <h1 className="text-5xl font-bold mb-4">India Ka Apna Store</h1>
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">Shop the latest trends with confidence. Quality products, fast delivery across India, and unbeatable prices.</p>
           <div className="flex gap-4 justify-center">
             <Link href="/products" className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">Shop Now</Link>
             <Link href="/products?category=Electronics" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">Electronics</Link>
@@ -57,7 +57,7 @@ export default function HomePage() {
             <div>
               <div className="text-3xl mb-2">🚚</div>
               <h3 className="font-semibold text-gray-900">Free Shipping</h3>
-              <p className="text-sm text-gray-500">On orders over $50</p>
+              <p className="text-sm text-gray-500">On orders over ₹500</p>
             </div>
             <div>
               <div className="text-3xl mb-2">🔄</div>

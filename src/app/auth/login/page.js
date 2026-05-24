@@ -52,7 +52,7 @@ function LoginForm() {
         <div className="mt-4 p-3 bg-gray-50 rounded-lg text-xs text-gray-500">
           <p className="font-medium mb-1">Demo Accounts:</p>
           <p>Admin: admin@store.com / admin123</p>
-          <p>User: user@store.com / user123</p>
+          <p>User: user@store.com / user123 (Name: Rahul Sharma)</p>
         </div>
       </div>
     </div>

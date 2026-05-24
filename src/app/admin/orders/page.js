@@ -70,13 +70,13 @@ export default function AdminOrders() {
                   <div key={item.id} className="flex items-center gap-3 text-sm">
                     <img src={item.product.image} alt="" className="w-10 h-10 rounded object-cover bg-gray-100" />
                     <span className="flex-1">{item.product.name} x {item.quantity}</span>
-                    <span>${(item.price * item.quantity).toFixed(2)}</span>
+                    <span>₹{Number(item.price * item.quantity).toLocaleString('en-IN')}</span>
                   </div>
                 ))}
               </div>
               <div className="border-t mt-4 pt-3 flex justify-between">
                 <span className="text-sm text-gray-500">Shipping: {order.address}, {order.city} {order.zip}</span>
-                <span className="font-bold">Total: ${order.total.toFixed(2)}</span>
+                <span className="font-bold">Total: ₹{Number(order.total).toLocaleString('en-IN')}</span>
               </div>
             </div>
           ))}

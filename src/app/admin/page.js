@@ -44,7 +44,7 @@ export default function AdminDashboard() {
         </div>
         <div className="bg-white rounded-xl border p-6">
           <p className="text-sm text-gray-500">Revenue</p>
-          <p className="text-3xl font-bold text-primary-600">${stats.revenue.toFixed(2)}</p>
+          <p className="text-3xl font-bold text-primary-600">₹{Number(stats.revenue).toLocaleString('en-IN')}</p>
         </div>
       </div>
 

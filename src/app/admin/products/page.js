@@ -91,7 +91,7 @@ export default function AdminProducts() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Price ($)</label>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Price (₹)</label>
               <input type="number" step="0.01" value={form.price} onChange={e => setForm({ ...form, price: e.target.value })} className="w-full px-3 py-2 border rounded-lg" required />
             </div>
             <div>
@@ -135,7 +135,7 @@ export default function AdminProducts() {
                     <span className="font-medium">{product.name}</span>
                   </td>
                   <td className="p-4 text-sm text-gray-600">{product.category}</td>
-                  <td className="p-4 text-sm">${product.price.toFixed(2)}</td>
+                  <td className="p-4 text-sm">₹{Number(product.price).toLocaleString('en-IN')}</td>
                   <td className="p-4 text-sm">{product.stock}</td>
                   <td className="p-4 text-right">
                     <button onClick={() => handleEdit(product)} className="text-primary-600 hover:underline text-sm mr-3">Edit</button>

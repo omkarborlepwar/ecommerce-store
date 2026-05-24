@@ -61,12 +61,12 @@ export default function CheckoutPage() {
         {cart.map(item => (
           <div key={item.id} className="flex justify-between py-2 text-sm">
             <span>{item.name} x {item.quantity}</span>
-            <span>${(item.price * item.quantity).toFixed(2)}</span>
+            <span>₹{Number(item.price * item.quantity).toLocaleString('en-IN')}</span>
           </div>
         ))}
         <div className="border-t pt-2 flex justify-between font-bold text-lg mt-2">
           <span>Total</span>
-          <span className="text-primary-600">${totalPrice.toFixed(2)}</span>
+          <span className="text-primary-600">₹{Number(totalPrice).toLocaleString('en-IN')}</span>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ export default function CheckoutPage() {
         {message && <p className={`text-sm ${message.includes('Failed') || message.includes('fill') ? 'text-red-600' : 'text-green-600'}`}>{message}</p>}
 
         <button type="submit" disabled={submitting} className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 disabled:opacity-50 transition-colors">
-          {submitting ? 'Processing...' : `Place Order - $${totalPrice.toFixed(2)}`}
+          {submitting ? 'Processing...' : `Place Order - ₹${Number(totalPrice).toLocaleString('en-IN')}`}
         </button>
       </form>
     </div>

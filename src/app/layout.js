@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata = {
-  title: 'ShopWave - Your One-Stop Shop',
-  description: 'Discover amazing products at great prices',
+  title: 'ShopWave - India ka Apna Store',
+  description: 'Discover amazing products at best prices in India',
 }
 
 export default function RootLayout({ children }) {
